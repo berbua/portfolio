@@ -28,7 +28,7 @@ nav ul li {
 }
 nav ul li a {
   text-decoration: none;
-  /*color:;*/
+  color: #fff;
   transition: color 0.2s, background-color 0.2s, padding 0.2s ease-in;
   font-size: 1.1em;
   text-shadow: 1px 1px 2px rgb(42, 42, 42);
@@ -49,7 +49,7 @@ nav ul li a::after {
   height: 2px;
   width: 100%;
 
-  /*------------ LINE COLOR*/
+  /*line color*/
   background-color: #c30f16;
   transform-origin: right bottom;
   transform: scale(0, 1);
@@ -97,4 +97,21 @@ nav.scrolling {
   position: fixed;
   transition: all 0.5s;
   z-index: 9999;
+}
+
+/*main header*/
+
+#header {
+  position: relative;
+  height: 100vh;
+  padding: 0 15%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-image: url(/img/bcgd_big.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffffff;
+  z-index: 1;
 }
