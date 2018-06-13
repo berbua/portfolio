@@ -50,7 +50,7 @@ nav ul li a::after {
   width: 100%;
 
   /*line color*/
-  background-color: #c30f16;
+  background-color: #6a3b29;
   transform-origin: right bottom;
   transform: scale(0, 1);
   transition: color 0.1s, transform 0.2s ease-out;
@@ -59,7 +59,7 @@ nav ul li a::after {
   box-shadow: 0px 0px 39px -6px rgba(255, 255, 255, 0.75);
 }
 nav ul li a:active::after {
-  background-color: #950006;
+  background-color: #6a3b29;
 }
 nav ul li a:hover::after,
 a:focus::after {
@@ -72,7 +72,7 @@ nav .logonav {
   left: 10px;
   height: 40px;
   width: 40px;
-  background-color: white;
+  /*background-color: white;*/
   text-align: center;
 }
 #logonav {
@@ -103,12 +103,13 @@ nav.scrolling {
 
 #header {
   position: relative;
+  width: 100%;
   height: 100vh;
   padding: 0 15%;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  background-image: url(/img/bcgd_big.jpg);
+  background-image: url(https://github.com/berbua/portfolio/blob/master/img/bcgd_big.jpg?raw=true);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
