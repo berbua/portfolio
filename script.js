@@ -1,4 +1,4 @@
-console.log("elo");
+/*console.log("elo");
 
 /*function add7() {
   let num1 = prompt("Your number?");
@@ -8,7 +8,7 @@ console.log("elo");
   console.log(sum);
 }
 
-console.log(add7());*/
+console.log(add7());
 
 function add7b(x) {
   let result = x + 7;
@@ -32,7 +32,7 @@ console.log(multiply(7, 8));
 }
 
 console.log(capitalize());*/
-
+/*
 function lastLetter() {
   let str2 = prompt("Tell me a word");
   let str2Length = str2.length;
@@ -40,4 +40,4 @@ function lastLetter() {
   console.log(result);
 }
 
-console.log(lastLetter());
+console.log(lastLetter());*/
