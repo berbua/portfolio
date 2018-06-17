@@ -100,7 +100,7 @@ nav.scrolling {
   z-index: 9999;
 }
 
-/*main header*/
+/*header*/
 
 #header {
   position: relative;
@@ -110,10 +110,33 @@ nav.scrolling {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  background-image: url(https://github.com/berbua/portfolio/blob/master/img/bcgd_big.jpg?raw=true);
+  /*background-image: url(https://github.com/berbua/portfolio/blob/master/img/bcgd_big.jpg?raw=true);*/
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  color: #ffffff;
+  color: black;
   z-index: 1;
+}
+
+#header #name-container {
+  margin: 0;
+  padding: 1em;
+  box-sizing: border-box;
+  z-index: 2;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-family: "Lato", sans-serif;
+  font-size: 3em;
+  color: #ffffff;
+  background-color: rgba(77, 77, 77, 0.29);
+}
+
+/*about me*/
+#about {
+  position: relative;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 40px 10% 60px 10%;
 }
