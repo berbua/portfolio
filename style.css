@@ -175,3 +175,20 @@ header h2 {
 .about-col {
   flex: 1 40%;
 }
+
+/*photos*/
+
+#photos-grid {
+  width: 80%;
+  margin: 40px auto;
+  height: auto;
+  display: grid;
+  grid-template-columns: 7; /* check!*/
+  grid-column-gap: 20px;
+}
+
+.photo-tile {
+  background-color: lightcoral;
+  width: 100px;
+  height: 100px;
+}
