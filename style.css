@@ -291,22 +291,6 @@ header h3 {
   opacity: 1;
 }
 
-.slides figcaption {
-  position: absolute;
-  font-family: sans-serif;
-  font-size: 0.8em;
-  bottom: 0.75em;
-  right: 0.35em;
-  padding: 0.25em;
-  color: #fff;
-  background: #000;
-  background: rgba(0, 0, 0, 0.25);
-  border-radius: 2px;
-}
-
-.slides figcaption a {
-  color: #fff;
-}
 .next,
 .prev {
   color: #fff;
@@ -346,6 +330,8 @@ nav button:hover {
   text-align: center;
   line-height: 25px;
   position: relative;
+  font-family: "Courier New", Courier, monospace;
+  justify-content: center;
 }
 
 #photos nav button {
@@ -359,6 +345,8 @@ nav button:hover {
 #photos nav ul {
   margin: 0;
   padding: 0;
+  text-align: center;
+  justify-content: center;
 }
 
 #photos nav ul > li {
