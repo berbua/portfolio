@@ -252,6 +252,8 @@ header h3 {
   font-weight: 700;
   font-size: 2em;
   color: #0b6890;
+  margin: 0 0 0.5em 0;
+  padding: 0;
 }
 
 .wrapper {
@@ -394,6 +396,12 @@ nav button:hover {
 
 #photos nav ul > li button.selected {
   opacity: 1;
+}
+
+#photos a {
+  text-decoration: none;
+  color: #0b6890;
+  text-align: center;
 }
 
 /* contact */
