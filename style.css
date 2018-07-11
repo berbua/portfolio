@@ -238,6 +238,7 @@ header h3 {
 .tile3 {
   grid-column: 1/2;
   grid-row: 2/3;
+  background: url(img/sketch_mni2.jpg) no-repeat top;
 }
 .tile4 {
   grid-column: 3/7;
