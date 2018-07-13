@@ -29,12 +29,10 @@ nav ul li {
 }
 nav ul li a {
   text-decoration: none;
-  font-family: "Fira sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   color: #fff;
-  transition: color 0.2s, background-color 0.2s, padding 0.2s ease-in;
   font-size: 1.2em;
-  /*text-shadow: 1px 1px 2px rgb(42, 42, 42);*/
 }
 
 nav ul li a:hover,
@@ -76,7 +74,6 @@ nav .logonav {
   height: 40px;
   width: 40px;
   color: #fff;
-  /*background-color: white;*/
   text-align: center;
 }
 #logonav {
@@ -95,8 +92,8 @@ nav .top-nav .icon {
   font-size: 25px;
 }
 
-nav.scrolling {
-  background-color: rgba(59, 59, 59, 0.79);
+.scrolling {
+  background-color: rgba(59, 59, 59, 0.5);
   height: 60px;
   position: fixed;
   transition: all 0.5s;
@@ -135,14 +132,15 @@ nav.scrolling {
 }
 
 header h1 {
-  font-family: "Playfair Display";
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  font-size: 3.2 em;
+  font-size: 2.5em;
   display: block;
   margin-top: 0;
 }
 
 header h3 {
+  font-family: "Montserrat", sans-serif;
   font-size: 1em;
   display: block;
   text-transform: uppercase;
@@ -173,11 +171,11 @@ header h3 {
 }
 
 #about h2 {
-  font-family: "Playfair Display";
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 2em;
   color: #0b6890;
-  text-align: center;
+  text-align: left;
 }
 
 #about h3 {
@@ -187,24 +185,32 @@ header h3 {
 
 #about p {
   font-family: "Fira Sans";
+  text-align: justify;
+  line-height: 1.5em;
 }
 
 .about-col {
   flex: 1 40%;
+  box-sizing: border-box;
+  padding: 0 2em 0 0;
 }
 
 /*projects */
 
+#projects {
+  padding: 50px 5%;
+}
+
 #projects h2 {
-  text-align: center;
-  font-family: "Playfair Display";
+  text-align: left;
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 2em;
   color: #0b6890;
 }
 
 #projects-grid-container {
-  width: 80%;
+  width: 100%;
   margin: 40px auto;
   height: auto;
   display: grid;
@@ -247,13 +253,17 @@ header h3 {
 
 /*photos*/
 
+#photos {
+  padding: 50px 5%;
+}
+
 #photos h2 {
-  text-align: center;
-  font-family: "Playfair Display";
+  text-align: left;
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 2em;
   color: #0b6890;
-  margin: 0 0 0.5em 0;
+  margin: 0 0 0.75em 0;
   padding: 0;
 }
 
@@ -335,6 +345,7 @@ nav button:hover {
   position: relative;
   font-family: "Courier New", Courier, monospace;
   justify-content: center;
+  display: flex;
 }
 
 #photos nav button {
@@ -343,6 +354,7 @@ nav button:hover {
   position: relative;
   border: none;
   outline: none;
+  align-self: flex-end;
 }
 
 #photos nav ul {
@@ -373,6 +385,7 @@ nav button:hover {
   line-height: 15px;
   right: 0;
   bottom: 0;
+  margin-bottom: 1.1em;
 }
 
 #photos nav button.play:before {
@@ -405,9 +418,17 @@ nav button:hover {
   text-align: center;
 }
 
+#photos h4 {
+  font-size: 0.8em;
+  text-align: right;
+  display: block;
+  align-self: flex-end;
+}
+
 /* contact */
 
 #contact {
+  padding: 50px 5%;
   width: 80%;
   margin: 80px auto;
   display: flex;
@@ -415,11 +436,12 @@ nav button:hover {
 }
 
 #contact h2 {
-  font-family: "Playfair Display";
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 2em;
   color: #0b6890;
   padding-top: 0;
+  text-align: left;
 }
 
 .social-label {
@@ -456,7 +478,7 @@ nav button:hover {
 
 footer {
   max-width: 1800px;
-  height: 150px;
+  height: 200px;
   background: url(img/footer.jpg);
   z-index: 1;
   box-sizing: border-box;

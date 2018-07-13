@@ -1,4 +1,35 @@
-//pokaz slajdow
+//smooth scrolling
+/*$(document).ready(function() {
+  $('a[href^="#"]').on("click", function(event) {
+    var target = $($(this).attr("href"));
+
+    if (target.length) {
+      event.preventDefault();
+      $("html, body").animate(
+        {
+          scrollTop: target.offset().top
+        },
+        1000
+      );
+    }
+  });
+});*/
+
+// Sticky menu
+window.onscroll = function() {
+  myFunction();
+};
+let navBar = document.getElementById("navBar");
+let sticky = navBar.offsetTop;
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    navBar.classList.add("scrolling");
+  } else {
+    navBar.classList.remove("scrolling");
+  }
+}
+
+//slideshow
 
 let playing = false;
 let slideshowInterval;
@@ -51,48 +82,7 @@ for (let numerPin = 1; numerPin < 5; numerPin++) {
     });
 }
 
-//najpierw zrobliysmy te fukcje kazda po kolei, potem petla for
-/*function showSlide1() {
-  showSlide(1);
-  /*document.querySelector(".show").classList.remove("show");
-  document.querySelector("#slide1").classList.add("show"); 
-}
-
-document.querySelector("#pin1").addEventListener("click", showSlide1);
-
-function showSlide2() {
-  showSlide(2);
-  /*document.querySelector(".show").classList.remove("show");
-  document.querySelector("#slide2").classList.add("show");
-}
-
-document.querySelector("#pin2").addEventListener("click", showSlide2);
-
-function showSlide3() {
-  showSlide(3);
-  /*document.querySelector(".show").classList.remove("show");
-  document.querySelector("#slide3").classList.add("show");
-}
-
-document.querySelector("#pin3").addEventListener("click", showSlide3);
-
-function showSlide4() {
-  showSlide(4);
-  /*document.querySelector(".show").classList.remove("show");
-  document.querySelector("#slide4").classList.add("show");
-}
-
-document.querySelector("#pin4").addEventListener("click", showSlide4);
-
-function showSlide5() {
-  showSlide(5);
-  /*document.querySelector(".show").classList.remove("show");
-  document.querySelector("#slide5").classList.add("show");
-}
-
-document.querySelector("#pin5").addEventListener("click", showSlide5); */
-
-//strzalki
+//next, previous slide
 
 function showNextSlide() {
   /*document.querySelector(".show").classList.remove("show");*/
