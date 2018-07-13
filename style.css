@@ -186,6 +186,7 @@ header h3 {
 #about p {
   font-family: "Fira Sans";
   text-align: justify;
+  font-size: 1.1em;
   line-height: 1.5em;
 }
 
@@ -193,6 +194,13 @@ header h3 {
   flex: 1 40%;
   box-sizing: border-box;
   padding: 0 2em 0 0;
+}
+
+.skills-list {
+  list-style-type: none;
+  line-height: 1.5em;
+  font-size: 1.1em;
+  -webkit-padding-start: 0;
 }
 
 /*projects */
