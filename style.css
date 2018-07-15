@@ -359,6 +359,7 @@ nav button:hover {
   font-family: "Courier New", Courier, monospace;
   justify-content: center;
   display: flex;
+  flex-direction: row;
 }
 
 #photos nav button {
@@ -426,16 +427,15 @@ nav button:hover {
 }
 
 #photos a {
+  align-self: center;
   text-decoration: none;
   color: #0b6890;
   text-align: center;
-}
-
-#photos h4 {
-  font-size: 0.8em;
-  text-align: right;
-  display: block;
-  align-self: flex-end;
+  font-size: 0.9em;
+  line-height: 25px;
+  font-family: "Montserrat", sans-serif;
+  position: absolute;
+  right: 0;
 }
 
 /* contact */
@@ -528,6 +528,7 @@ footer {
   .logonav {
     display: none;
   }
+
   /*burger menu*/
   .burger-header-nav {
     display: block;
@@ -543,7 +544,9 @@ footer {
   }
   nav ul {
     height: 0;
-    text-align: right;
+    text-align: center;
+    width: 30%;
+    margin: 0 2em 0 auto;
   }
 
   .top-nav.open {
@@ -551,6 +554,11 @@ footer {
     flex-direction: column;
     justify-content: flex-start;
     align-content: center;
+    height: auto;
+    background-color: rgba(59, 59, 59, 0.5);
+    z-index: 15;
+  }
+  nav ul li {
   }
 
   nav ul li a {
@@ -580,5 +588,18 @@ footer {
   .contact-col-second {
     flex: 1;
     align-self: auto;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #header #name-container {
+    position: absolute;
+    left: 30%;
+    top: 60%;
+  }
+
+  nav ul {
+    width: 80%;
+    margin: 0 auto;
   }
 }

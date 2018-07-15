@@ -86,7 +86,7 @@ for (let numerPin = 1; numerPin < 5; numerPin++) {
   document
     .querySelector("#pin" + numerPin)
     .addEventListener("click", function() {
-      showSlide(1);
+      showSlide(currentNumber);
     });
 }
 
