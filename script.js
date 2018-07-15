@@ -15,6 +15,14 @@
   });
 });*/
 
+//hamburger menu
+
+let burger = document.querySelector(".burger-header-nav");
+let menu = document.querySelector(".top-nav");
+burger.addEventListener("click", function() {
+  menu.classList.toggle("open");
+});
+
 // Sticky menu
 window.onscroll = function() {
   myFunction();
@@ -53,7 +61,7 @@ function playButtonClicked() {
     startSlideshow();
   }
 }
-document.querySelector("#play").addEventListener("click", playButtonClicked);
+//document.querySelector("#play").addEventListener("click", playButtonClicked);
 
 // poczatek
 
