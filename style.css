@@ -100,6 +100,13 @@ nav .top-nav .icon {
   z-index: 9999;
 }
 
+.mobile-btn {
+  align-self: flex-end;
+  color: #fff;
+  font-size: 2.2em;
+  display: none;
+}
+
 /*header*/
 
 #header {
@@ -160,14 +167,18 @@ header h3 {
 #about {
   position: relative;
   height: auto;
-
   padding: 50px 5%;
 }
 
-#about article {
+.about-container {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+}
+
+.about-tile {
+  flex-basis: 50%;
+  box-sizing: border-box;
+  margin: 1em 1.5em;
 }
 
 #about h2 {
@@ -188,12 +199,6 @@ header h3 {
   text-align: justify;
   font-size: 1.1em;
   line-height: 1.5em;
-}
-
-.about-col {
-  flex: 1 40%;
-  box-sizing: border-box;
-  padding: 0 2em 0 0;
 }
 
 .skills-list {
@@ -223,7 +228,7 @@ header h3 {
   height: auto;
   display: grid;
   grid-template-columns: 40% 5% 10% 5% 5% 35%;
-  grid-template-rows: 1fr 1fr;
+  grid-auto-rows: auto;
   grid-row-gap: 30px;
 }
 
@@ -503,4 +508,53 @@ footer {
   /*background: url(img/rm-logo2.png) no-repeat; */
   text-decoration: none;
   text-align: center;
+}
+
+/*MEDIA QUERIES*/
+
+@media screen and (max-width: 950px) {
+  #contact {
+    width: 100%;
+  }
+
+  .about-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+/*tablet*/
+
+@media screen and (max-width: 768px) {
+  .logonav {
+    display: none;
+  }
+  nav ul {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+  }
+
+  nav ul li a {
+    width: 30%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  #photos {
+    padding-bottom: 20px;
+  }
+
+  #contact {
+    flex-direction: column;
+    padding-top: 20px;
+    margin-top: 20px;
+  }
+
+  .contact-col-first {
+    flex: 1;
+  }
+  .contact-col-second {
+    flex: 1;
+    align-self: auto;
+  }
 }
