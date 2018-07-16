@@ -17,7 +17,7 @@
 
 //hamburger menu
 
-let burger = document.querySelector(".burger-header-nav");
+let burger = document.getElementById("burger-header-nav");
 let menu = document.querySelector(".top-nav");
 burger.addEventListener("click", function() {
   menu.classList.toggle("open");
