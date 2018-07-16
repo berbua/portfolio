@@ -590,10 +590,12 @@ footer {
 }
 
 @media screen and (max-width: 500px) {
+  #header {
+    justify-content: flex-end;
+  }
+
   #header #name-container {
-    position: absolute;
-    left: 30%;
-    top: 60%;
+    margin-bottom: 100px;
   }
 
   nav ul {
