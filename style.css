@@ -576,7 +576,7 @@ footer {
 
   #contact {
     flex-direction: column;
-    padding-top: 20px;
+    padding: 20px 5%;
     margin-top: 20px;
   }
 
