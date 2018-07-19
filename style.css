@@ -632,6 +632,9 @@ footer {
 }
 
 @media screen and (max-width: 500px) {
+  #scroll-img {
+    top: 75%;
+  }
   #header {
     justify-content: flex-end;
   }
