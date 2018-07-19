@@ -518,28 +518,35 @@ footer {
 /*tablet*/
 
 @media screen and (max-width: 768px) {
+  #main-nav {
+  }
   .logonav {
     display: none;
   }
 
-  /*burger menu*/
+  #header #name-container {
+    background-color: rgba(77, 77, 77, 0);
+  }
+
+  /*mobile menu*/
   #burger-main-nav {
     display: block;
     height: 40px;
     width: 100%;
     background: url(img/menu.png) no-repeat 98% center;
     cursor: pointer;
+    margin-bottom: 20px;
   }
 
   .main-nav-list {
     height: 0;
     overflow: hidden;
   }
-  nav ul {
+  .main-nav-list {
     height: 0;
     text-align: center;
     width: 40%;
-    margin: 0 2em 0 auto;
+    margin: 0 0 0 auto;
   }
 
   .main-nav-list.open {
@@ -547,7 +554,7 @@ footer {
     flex-direction: column;
     justify-content: flex-start;
     align-content: center;
-    height: auto;
+    height: 100vh;
     background-color: rgba(59, 59, 59, 0.5);
     z-index: 15;
   }
