@@ -23,7 +23,7 @@ burger.addEventListener("click", function() {
   menu.classList.toggle("open");
 });
 
-// Sticky menu
+// sticky menu
 window.onscroll = function() {
   myFunction();
 };
