@@ -88,7 +88,7 @@ nav .logonav {
   margin: 0;
   color: #fff;
 }
-nav .top-nav .icon {
+nav .main-nav-list .icon {
   font-size: 25px;
 }
 
@@ -523,7 +523,7 @@ footer {
   }
 
   /*burger menu*/
-  #burger-header-nav {
+  #burger-main-nav {
     display: block;
     height: 40px;
     width: 100%;
@@ -531,7 +531,7 @@ footer {
     cursor: pointer;
   }
 
-  .top-nav {
+  .main-nav-list {
     height: 0;
     overflow: hidden;
   }
@@ -542,7 +542,7 @@ footer {
     margin: 0 2em 0 auto;
   }
 
-  .top-nav.open {
+  .main-nav-list.open {
     overflow: initial;
     flex-direction: column;
     justify-content: flex-start;

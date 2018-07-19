@@ -15,10 +15,10 @@
   });
 });*/
 
-//hamburger menu
+//mobile menu
 
-let burger = document.getElementById("burger-header-nav");
-let menu = document.querySelector(".top-nav");
+let burger = document.getElementById("burger-main-nav");
+let menu = document.querySelector(".main-nav-list");
 burger.addEventListener("click", function() {
   menu.classList.toggle("open");
 });
@@ -27,7 +27,7 @@ burger.addEventListener("click", function() {
 window.onscroll = function() {
   myFunction();
 };
-let navBar = document.getElementById("navBar");
+let navBar = document.getElementById("main-nav");
 let sticky = navBar.offsetTop;
 function myFunction() {
   if (window.pageYOffset > sticky) {
