@@ -592,6 +592,7 @@ footer {
   .project-tile {
     height: 400px;
     width: 100%;
+    border: 2px solid rgba(59, 59, 59, 0.6);
   }
 
   .tile1 {
