@@ -432,7 +432,7 @@ nav button:hover {
 
 /* contact */
 
-#contact {
+.contact-section {
   padding: 50px 5%;
   width: 80%;
   margin: 80px auto;
@@ -440,7 +440,7 @@ nav button:hover {
   flex-direction: row;
 }
 
-#contact h2 {
+.contact-section h2 {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 2em;
@@ -461,12 +461,13 @@ nav button:hover {
   align-self: flex-end;
 }
 
-#contact p {
+.contact-section p {
   color: #686868;
 }
 
 .social a {
   padding: 1em;
+  text-decoration: none;
 }
 
 .mail-class {
@@ -505,7 +506,7 @@ footer {
 /*MEDIA QUERIES*/
 
 @media screen and (max-width: 950px) {
-  #contact {
+  .contact-section {
     width: 100%;
   }
 
@@ -612,7 +613,7 @@ footer {
     grid-row: 7/8;
   }
 
-  #contact {
+  .contact-section {
     flex-direction: column;
     padding: 20px 5%;
     margin-top: 20px;
@@ -653,7 +654,7 @@ footer {
     position: inherit;
   }
 
-  #contact {
+  .contact-section {
     margin: 30px auto;
   }
 }
