@@ -258,11 +258,11 @@ header h3 {
 
 /*photos*/
 
-#photos {
+.photos-section {
   padding: 50px 5%;
 }
 
-#photos h2 {
+.photos-section h2 {
   text-align: left;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
@@ -344,7 +344,7 @@ nav button:hover {
   border-bottom-right-radius: 3px;
 }
 
-#photos nav {
+.photos-nav {
   text-align: center;
   line-height: 25px;
   position: relative;
@@ -354,7 +354,7 @@ nav button:hover {
   flex-direction: row;
 }
 
-#photos nav button {
+.photos-nav button {
   background: #fff;
   color: #0b6890;
   position: relative;
@@ -363,19 +363,19 @@ nav button:hover {
   align-self: flex-end;
 }
 
-#photos nav ul {
+.photos-nav ul {
   margin: 0;
   padding: 0;
   text-align: center;
   justify-content: center;
 }
 
-#photos nav ul > li {
+.photos-nav-list li {
   display: inline-block;
   list-style-type: none;
 }
 
-#photos nav ul > li button {
+.photos-nav-list li button {
   width: 15px;
   height: 20px;
   line-height: 25px;
@@ -383,7 +383,7 @@ nav button:hover {
   opacity: 0.7;
 }
 
-#photos nav button.play {
+.photos-nav button.play {
   position: absolute;
   width: 30px;
   height: 20px;
@@ -394,7 +394,7 @@ nav button:hover {
   margin-bottom: 1.1em;
 }
 
-#photos nav button.play:before {
+.photos-nav button.play:before {
   content: "\25B6";
   position: absolute;
   top: 0;
@@ -402,11 +402,11 @@ nav button:hover {
   width: 100%;
 }
 
-#photos nav button.play.on:before {
+.photos-nav button.play.on:before {
   content: "\23f8";
 }
 
-#photos nav ul > li button:before {
+.photos-nav-list li button:before {
   content: "\2022";
   position: absolute;
   top: 0;
@@ -414,11 +414,11 @@ nav button:hover {
   width: 100%;
 }
 
-#photos nav ul > li button.selected {
+.photos-nav-list li button.selected {
   opacity: 1;
 }
 
-#photos a {
+.photos-more {
   align-self: center;
   text-decoration: none;
   color: #0b6890;
@@ -571,7 +571,7 @@ footer {
     height: 0;
   }
 
-  #photos {
+  .photos-section {
     padding-bottom: 20px;
   }
   .projects-grid-container {
@@ -643,13 +643,13 @@ footer {
     width: 80%;
     margin: 0 auto;
   }
-  #photos nav ul {
+  .photos-nav-list {
     margin: 0 auto;
   }
-  #photos nav {
+  .photos-nav {
     flex-direction: column;
   }
-  #photos a {
+  .photos-more {
     position: inherit;
   }
 
