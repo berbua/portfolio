@@ -256,7 +256,7 @@ header h3 {
   grid-row: 2/3;
 }
 
-/*photos*/
+/* Photos*/
 
 .photos-section {
   padding: 50px 5%;
@@ -430,7 +430,7 @@ nav button:hover {
   right: 0;
 }
 
-/* contact */
+/* Contact */
 
 .contact-section {
   padding: 50px 5%;
@@ -480,7 +480,7 @@ nav button:hover {
   color: #0b6890;
 }
 
-/*footer*/
+/* Footer */
 
 footer {
   max-width: 1800px;
@@ -498,7 +498,6 @@ footer {
   width: 50%;
   margin: 40px auto;
   color: #fff;
-  /*background: url(img/rm-logo2.png) no-repeat; */
   text-decoration: none;
   text-align: center;
 }
@@ -515,7 +514,7 @@ footer {
     flex-direction: column;
   }
 }
-/*tablet*/
+/* Tablet */
 
 @media screen and (max-width: 768px) {
   .logonav-container {
@@ -526,7 +525,7 @@ footer {
     background-color: rgba(77, 77, 77, 0);
   }
 
-  /*mobile menu*/
+  /* Burger menu */
   .mobile-menu {
     display: block;
     height: 40px;
@@ -627,6 +626,8 @@ footer {
     align-self: auto;
   }
 }
+
+/* Mobile devices */
 
 @media screen and (max-width: 500px) {
   .scroll-icon {
