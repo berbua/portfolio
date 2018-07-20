@@ -97,9 +97,9 @@ a:focus::after {
   z-index: 9999;
 }
 
-/*header*/
+/* Header */
 
-#header {
+.header-section {
   position: relative;
   width: 100%;
   height: 100vh;
@@ -115,7 +115,7 @@ a:focus::after {
   z-index: 1;
 }
 
-#header #name-container {
+.name-container {
   margin: 0;
   padding: 1em;
   box-sizing: border-box;
@@ -154,8 +154,9 @@ header h3 {
   top: 85%;
 }
 
-/*about me*/
-#about {
+/* About me section*/
+
+.about-section {
   position: relative;
   height: auto;
   padding: 50px 5%;
@@ -172,7 +173,7 @@ header h3 {
   margin: 1em 1.5em;
 }
 
-#about h2 {
+.about-section h2 {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 2em;
@@ -180,12 +181,12 @@ header h3 {
   text-align: left;
 }
 
-#about h3 {
+.about-section h3 {
   font-size: 1em;
   text-transform: uppercase;
 }
 
-#about p {
+.about-section p {
   font-family: "Fira Sans";
   text-align: justify;
   font-size: 1.1em;
@@ -199,13 +200,13 @@ header h3 {
   -webkit-padding-start: 0;
 }
 
-/*projects */
+/* Projects */
 
-#projects {
+.projects-section {
   padding: 50px 5%;
 }
 
-#projects h2 {
+.projects-section h2 {
   text-align: left;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
@@ -213,7 +214,7 @@ header h3 {
   color: #0b6890;
 }
 
-#projects-grid-container {
+.projects-grid-container {
   width: 100%;
   margin: 40px auto;
   height: auto;
@@ -520,7 +521,7 @@ footer {
     display: none;
   }
 
-  #header #name-container {
+  .name-container {
     background-color: rgba(77, 77, 77, 0);
   }
 
@@ -573,7 +574,7 @@ footer {
   #photos {
     padding-bottom: 20px;
   }
-  #projects-grid-container {
+  .projects-grid-container {
     width: 100%;
     margin: 40px auto;
     height: auto;
@@ -630,11 +631,11 @@ footer {
   .scroll-icon {
     top: 75%;
   }
-  #header {
+  .header-section {
     justify-content: flex-end;
   }
 
-  #header #name-container {
+  .name-container {
     margin-bottom: 100px;
   }
 
