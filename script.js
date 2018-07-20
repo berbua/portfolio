@@ -17,7 +17,7 @@
 
 //mobile menu
 
-let burger = document.getElementById("burger-main-nav");
+let burger = document.getElementById("js-mobile-menu");
 let menu = document.querySelector(".main-nav-list");
 burger.addEventListener("click", function() {
   menu.classList.toggle("open");
@@ -27,7 +27,7 @@ burger.addEventListener("click", function() {
 window.onscroll = function() {
   myFunction();
 };
-let navBar = document.getElementById("main-nav");
+let navBar = document.getElementById("top-nav");
 let sticky = navBar.offsetTop;
 function myFunction() {
   if (window.pageYOffset > sticky) {
