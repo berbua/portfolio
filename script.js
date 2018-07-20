@@ -1,29 +1,18 @@
-//smooth scrolling
-/*$(document).ready(function() {
-  $('a[href^="#"]').on("click", function(event) {
-    var target = $($(this).attr("href"));
-
-    if (target.length) {
-      event.preventDefault();
-      $("html, body").animate(
-        {
-          scrollTop: target.offset().top
-        },
-        1000
-      );
-    }
-  });
-});*/
-
-//mobile menu
+// Mobile menu
 
 let burger = document.getElementById("js-mobile-menu");
 let menu = document.querySelector(".main-nav-list");
+let links = menu.querySelectorAll("a");
 burger.addEventListener("click", function() {
   menu.classList.toggle("open");
+  links.forEach(link =>
+    link.addEventListener("click", function() {
+      menu.classList.remove("open");
+    })
+  );
 });
 
-// sticky menu
+// Sticky menu
 window.onscroll = function() {
   myFunction();
 };
@@ -37,33 +26,21 @@ function myFunction() {
   }
 }
 
-//slideshow
+// Slideshow
 
-let playing = false;
+// autoplay
+
+let playing = true;
 let slideshowInterval;
 
-function startSlideshow() {
-  document.querySelector("#play").classList.add("on");
-  playing = true;
-  slideshowInterval = setInterval(showNextSlide, 3000);
-}
-
-function stopSlideshow() {
-  document.querySelector("#play").classList.remove("on");
-  playing = false;
-  clearInterval(slideshowInterval);
-}
-
-function playButtonClicked() {
-  if (playing === true) {
-    stopSlideshow();
-  } else {
-    startSlideshow();
+function slideShowActive() {
+  if ((playing = true)) {
+    slideshowInterval = setInterval(showNextSlide, 3500);
   }
 }
-//document.querySelector("#play").addEventListener("click", playButtonClicked);
+slideShowActive();
 
-// poczatek
+// pins
 
 let currentNumber = 1;
 document.querySelector("#slide" + currentNumber).classList.add("show");
@@ -90,16 +67,13 @@ for (let numerPin = 1; numerPin < 5; numerPin++) {
     });
 }
 
-//next, previous slide
+// next, previous slide
 
 function showNextSlide() {
-  /*document.querySelector(".show").classList.remove("show");*/
-
   let newNumber = currentNumber + 1;
   if (newNumber > 5) {
     newNumber = 1;
   }
-  //document.querySelector("#slide" + newNumber).classList.add("show");
   showSlide(newNumber);
   currentNumber = newNumber;
 }
@@ -107,26 +81,12 @@ function showNextSlide() {
 document.querySelector("#next").addEventListener("click", showNextSlide);
 
 function showPreviousSlide() {
-  //document.querySelector(".show").classList.remove("show");
-
   let newNumber = currentNumber - 1;
   if (newNumber < 1) {
     newNumber = 5;
   }
-  //document.querySelector("#slide" + newNumber).classList.add("show");
   showSlide(newNumber);
   currentNumber = newNumber;
 }
 
 document.querySelector("#prev").addEventListener("click", showPreviousSlide);
-
-//alternatywne sprawdzenie czy pokaz slajdow sie odtwarza
-/*function toggleAutoPlay() {
-  if (document.querySelector("#play.on")) {
-    document.querySelector("#play").classList.remove("on");
-  } else {
-    document.querySelector("#play").classList.add("on");
-  }
-}
-
-document.querySelector("#play").addEventListener("click", toggleAutoPlay; */
