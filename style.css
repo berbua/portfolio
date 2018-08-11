@@ -178,7 +178,7 @@ header h3 {
   font-weight: 700;
   font-size: 2em;
   color: #0b6890;
-  text-align: left;
+  text-align: center;
 }
 
 .about-section h3 {
@@ -193,11 +193,19 @@ header h3 {
   line-height: 1.5em;
 }
 
+.about-section a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+
 .skills-list {
   list-style-type: none;
   line-height: 1.5em;
   font-size: 1.1em;
   -webkit-padding-start: 0;
+  margin-left: 0;
+  padding-left: 0;
 }
 
 /* Projects */
@@ -207,7 +215,7 @@ header h3 {
 }
 
 .projects-section h2 {
-  text-align: left;
+  text-align: center;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 2em;
@@ -215,13 +223,14 @@ header h3 {
 }
 
 .projects-grid-container {
-  width: 100%;
+  width: 80%;
   margin: 40px auto;
   height: auto;
   display: grid;
-  grid-template-columns: 40% 5% 10% 5% 5% 35%;
-  grid-auto-rows: auto;
-  grid-row-gap: 30px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-row-gap: 20px;
+  grid-column-gap: 5%;
 }
 
 .project-tile {
@@ -236,13 +245,13 @@ header h3 {
 }
 
 .tile1 {
-  grid-column: 1/4;
+  grid-column: 1/2;
   grid-row: 1/2;
   background: url(img/wecreate_mini2.jpg) no-repeat;
 }
 
 .tile2 {
-  grid-column: 5/7;
+  grid-column: 2/3;
   grid-row: 1/2;
   background: url(img/rps.jpg) no-repeat top;
 }
@@ -252,7 +261,7 @@ header h3 {
   background: url(img/sketch_mni2.jpg) no-repeat top;
 }
 .tile4 {
-  grid-column: 3/7;
+  grid-column: 2/3;
   grid-row: 2/3;
 }
 
@@ -263,7 +272,7 @@ header h3 {
 }
 
 .photos-section h2 {
-  text-align: left;
+  text-align: center;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 2em;
