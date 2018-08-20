@@ -1,44 +1,57 @@
 // Mobile menu
 
-let burger = document.getElementById("js-mobile-menu");
-let menu = document.querySelector(".main-nav-list");
-let links = menu.querySelectorAll("a");
-burger.addEventListener("click", function() {
-  menu.classList.toggle("open");
-  links.forEach(link =>
-    link.addEventListener("click", function() {
-      menu.classList.remove("open");
-    })
-  );
-});
+const mobileMenu = () => {
+  const burger = document.getElementById("js-mobile-menu");
+  const menu = document.querySelector(".main-nav-list");
+  const links = menu.querySelectorAll("a");
+  burger.addEventListener("click", function() {
+    menu.classList.toggle("open");
+    links.forEach(link =>
+      link.addEventListener("click", function() {
+        menu.classList.remove("open");
+      })
+    );
+  });
+};
+
+mobileMenu();
 
 // Sticky menu
-window.onscroll = function() {
-  myFunction();
-};
-let navBar = document.getElementById("top-nav");
-let sticky = navBar.offsetTop;
-function myFunction() {
-  if (window.pageYOffset > sticky) {
-    navBar.classList.add("scrolling");
-  } else {
-    navBar.classList.remove("scrolling");
+
+const stickyMenu = () => {
+  window.onscroll = function() {
+    stickyScroll();
+  };
+  const navBar = document.getElementById("top-nav");
+  const sticky = navBar.offsetTop;
+  function stickyScroll() {
+    if (window.pageYOffset > sticky) {
+      navBar.classList.add("scrolling");
+    } else {
+      navBar.classList.remove("scrolling");
+    }
   }
-}
+};
+
+stickyMenu();
 
 // Slideshow
 
 // autoplay
 
-let playing = true;
-let slideshowInterval;
+const slideShow = () => {
+  let playing = true;
+  let slideshowInterval;
 
-function slideShowActive() {
-  if ((playing = true)) {
-    slideshowInterval = setInterval(showNextSlide, 3500);
+  function slideShowActive() {
+    if ((playing = true)) {
+      slideshowInterval = setInterval(showNextSlide, 3500);
+    }
   }
-}
-slideShowActive();
+  slideShowActive();
+};
+
+slideShow();
 
 // pins
 
