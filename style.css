@@ -152,6 +152,7 @@ header h3 {
   z-index: 4;
   align-self: center;
   top: 85%;
+  text-align: center;
 }
 
 /* About me section*/
@@ -223,7 +224,7 @@ header h3 {
   color: #0b6890;
 }
 
-.projects-grid-container {
+.projects-container {
   width: 80%;
   margin: 40px auto;
   height: auto;
@@ -355,19 +356,20 @@ nav button:hover {
   position: relative;
   border: none;
   outline: none;
-  align-self: flex-end;
 }
 
-.photos-nav ul {
+.photos-nav-list {
   margin: 0;
   padding: 0;
   text-align: center;
   justify-content: center;
+  align-content: center;
 }
 
 .photos-nav-list li {
   display: inline-block;
   list-style-type: none;
+  flex-basis: 20%;
 }
 
 .photos-nav-list li button {
@@ -395,6 +397,10 @@ nav button:hover {
   top: 0;
   left: 0;
   width: 100%;
+}
+
+.none {
+  display: none;
 }
 
 .photos-nav button.play.on:before {
@@ -572,7 +578,7 @@ footer {
   .photos-section {
     padding-bottom: 20px;
   }
-  .projects-grid-container {
+  .projects-container {
     width: 100%;
     margin: 40px auto;
     height: auto;
@@ -596,21 +602,29 @@ footer {
 /* Mobile devices */
 
 @media screen and (max-width: 500px) {
+  .main-nav-list.open {
+    background-color: rgba(59, 59, 59, 0.75);
+  }
   .scroll-icon {
-    top: 75%;
+    top: 85%;
   }
   .header-section {
     justify-content: flex-end;
   }
 
   .name-container {
-    margin-bottom: 100px;
+    margin-bottom: 150px;
   }
 
   .main-nav-list {
     width: 80%;
     margin: 0 auto;
   }
+  .projects-container {
+    flex-direction: column;
+    justify-content: center;
+  }
+
   .photos-nav-list {
     margin: 0 auto;
   }
