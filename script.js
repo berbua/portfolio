@@ -33,8 +33,11 @@ const mobileMenu = () => {
 
 mobileMenu();
 
-// Photos navigation
+//Projects - hover
 
+
+
+// Photos navigation
 const pins = document.querySelectorAll(".pin");
 let currentNumber = 1;
 document.querySelector("#slide" + currentNumber).classList.add("show");
@@ -84,8 +87,6 @@ const showPreviousSlide = () => {
 document.querySelector("#prev").addEventListener("click", showPreviousSlide);
 
 // Photos slideshow
-
-// autoplay
 const slideShow = () => {
   let playing = true;
   let slideshowInterval;
