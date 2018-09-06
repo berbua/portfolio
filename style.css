@@ -252,6 +252,20 @@ header h3 {
   box-sizing: border-box;
 }
 
+.tile1 {
+  order: 1;
+}
+.tile6 {
+  order: 2;
+}
+
+.tile2,
+.tile3,
+.tile4,
+.tile5 {
+  order: 6;
+}
+
 /* Photos*/
 
 .photos-section {
