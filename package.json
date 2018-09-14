@@ -1,0 +1,22 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Kasia Berbeka portfoilio",
+  "main": "script.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/berbua/portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/berbua/portfolio/issues"
+  },
+  "homepage": "https://github.com/berbua/portfolio#readme",
+  "devDependencies": {
+    "node-sass": "^4.9.3"
+  }
+}
