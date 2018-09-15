@@ -11,7 +11,7 @@
     <meta http-equiv="x-ua-compatible" content="IE=edge">
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat|Roboto">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Sans:300|Playfair+Display:400,700">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
         crossorigin="anonymous">
@@ -19,38 +19,42 @@
 
 <body>
     <!-- main navigation -->
-    <nav id="top-nav" class="main-nav">
-        <div class="logonav-container">
-            <a class="logonav-icon" href="#">K</a>
-        </div>
-        <a id="js-mobile-menu" class="mobile-menu"></a>
-        <ul class="main-nav-list">
-            <li>
-                <a href="#header">Start</a>
-            </li>
-            <li>
-                <a href="#about">About</a>
-            </li>
-            <li>
-                <a href="#projects">Projects</a>
-            </li>
-            <li>
-                <a href="#photos">Photos</a>
-            </li>
-            <li>
-                <a href="#contact">Contact</a>
-            </li>
-        </ul>
+    <div class="navigation">
+        <nav id="js-top-nav" class="navigation__nav">
+            <div class="navigation__logo-box">
+                <a class="navigation__logo-icon" href="#">K</a>
+            </div>
+            <a id="js-mobile-menu" class="mobile-menu"></a>
+            <ul class="navigation__list">
+                <li class="navigation__item">
+                    <a href="#header" class="navigation__link">Start</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#about" class="navigation__link">About</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#projects" class="navigation__link">Projects</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#photos" class="navigation__link">Photos</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#contact" class="navigation__link">Contact</a>
+                </li>
+            </ul>
 
-    </nav>
+        </nav>
+    </div>
     <!-- header -->
-    <header id="header" class="header-section">
-        <div class="name-container">
-            <h3>Hi, my name is</h3>
-            <h1>Kasia</h1>
-            <p></p>
+    <header id="header" class="header">
+        <div class="header__name-container">
+            <h1 class="heading-primary">
+                <span class="heading-primary--sub">Hi, my name is</span>
+                <span class="heading-primary--main">Kasia</span>
+                <span class="heading-primary--sub">Front - end developer to be</span>
+            </h1>
         </div>
-        <div class="scroll-icon">
+        <div class="header__scroll-icon">
             <i class="fas fa-angle-double-down"></i>
         </div>
 
