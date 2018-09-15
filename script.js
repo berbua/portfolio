@@ -3,7 +3,7 @@ const stickyMenu = () => {
   window.onscroll = function() {
     stickyScroll();
   };
-  const navBar = document.getElementById("top-nav");
+  const navBar = document.getElementById("js-top-nav");
   const sticky = navBar.offsetTop;
   function stickyScroll() {
     if (window.pageYOffset > sticky) {
@@ -19,7 +19,7 @@ stickyMenu();
 // Mobile menu
 const mobileMenu = () => {
   const burger = document.getElementById("js-mobile-menu");
-  const menu = document.querySelector(".main-nav-list");
+  const menu = document.querySelector(".main-nav__list");
   const links = menu.querySelectorAll("a");
   burger.addEventListener("click", function() {
     menu.classList.toggle("open");
@@ -34,8 +34,6 @@ const mobileMenu = () => {
 mobileMenu();
 
 //Projects - hover
-
-
 
 // Photos navigation
 const pins = document.querySelectorAll(".pin");
