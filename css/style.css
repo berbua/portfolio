@@ -393,6 +393,8 @@ body {
     top: 0;
     left: 0;
     width: 100%; }
+  .photo__item.selected {
+    opacity: 0.5; }
 
 .photo__more:link, .photo__more:visited {
   align-self: center;
