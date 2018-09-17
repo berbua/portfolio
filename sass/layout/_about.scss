@@ -1,0 +1,29 @@
+.about {
+  &__container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__content-box {
+    flex-basis: 50%;
+    box-sizing: border-box;
+    margin: 1rem 2.5rem;
+  }
+  &__skills-list {
+    list-style-type: none;
+    line-height: 2rem;
+    font-size: $default-font-size;
+    -webkit-padding-start: 0;
+    margin-left: 0;
+    padding-left: 0;
+  }
+  &__item {
+    padding: 0.4rem;
+    font-size: 2rem;
+  }
+  &__link:link {
+    text-decoration: none;
+    color: $color-black;
+    font-weight: 600;
+  }
+}
