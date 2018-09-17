@@ -493,3 +493,22 @@ nav button:hover {
   font-size: 2em;
   padding: 1rem;
   color: #0b6890; }
+
+.footer {
+  max-width: 1800px;
+  height: 200px;
+  background: url(../img/footer.jpg);
+  z-index: 1;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .footer__copyrights:link, .footer__copyrights:visited {
+    font-size: 1.6rem;
+    display: block;
+    height: auto;
+    width: 50%;
+    margin: 40px auto;
+    color: #fff;
+    text-decoration: none;
+    text-align: center; }
