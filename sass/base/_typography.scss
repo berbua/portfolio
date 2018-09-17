@@ -1,5 +1,5 @@
 body {
-  font-family: "Fira sans", sans-serif;
+  font-family: $font-family-secondary;
   font-weight: 400;
 }
 
@@ -9,7 +9,7 @@ body {
   &--main {
     display: block;
     font-size: 4rem;
-    font-weight: 400;
+    font-weight: 100;
     margin-top: 0;
   }
 
@@ -19,4 +19,25 @@ body {
     text-transform: uppercase;
     padding: 1rem;
   }
+}
+
+.heading-secondary {
+  font-family: $font-family-primary;
+  font-weight: 700;
+  font-size: 3.5rem;
+  color: $color-blue-primary;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.heading-tertiary {
+  font-family: $font-family-primary;
+  color: $color-blue-primary;
+  font-size: 2.2rem;
+}
+
+.paragraph {
+  font-family: $font-family-secondary;
+  text-align: justify;
+  font-size: 2rem;
 }
