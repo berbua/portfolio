@@ -93,6 +93,10 @@ body {
   margin-top: 2rem !important;
 }
 
+.u-align-text-left {
+  text-align: left !important;
+}
+
 .navigation {
   position: relative;
 }
@@ -268,6 +272,19 @@ body {
 
 .section-photos {
   padding: 1rem 5%;
+}
+
+.section-contact {
+  padding: 50px 5%;
+  width: 80%;
+  margin: 80px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .header {
@@ -585,7 +602,7 @@ body {
   text-decoration: none;
   color: #0b6890;
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   line-height: 1;
   font-family: "Montserrat", sans-serif;
   position: absolute;
@@ -638,5 +655,49 @@ nav button:hover {
 .show {
   z-index: 3;
   opacity: 1;
+}
+
+.contact__col-first {
+  -ms-flex-preferred-size: 65%;
+      flex-basis: 65%;
+}
+
+.contact__col-second {
+  -ms-flex-preferred-size: 35%;
+      flex-basis: 35%;
+  height: 100%;
+}
+
+.contact__more {
+  color: #686868;
+  display: block;
+  text-align: left;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+.contact__social-label {
+  color: #686868;
+  display: block;
+  text-transform: uppercase;
+  font-size: 2rem;
+  padding: 1rem 0 0;
+}
+
+.contact____social-link {
+  padding: 1rem;
+  text-decoration: none;
+}
+
+.contact__mail {
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: #0b6890;
+}
+
+.contact__icon {
+  font-size: 2em;
+  padding: 1rem;
+  color: #0b6890;
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,42 @@
+.contact {
+  &__col-first {
+    flex-basis: 65%;
+  }
+
+  &__col-second {
+    flex-basis: 35%;
+
+    height: 100%;
+  }
+
+  &__more {
+    color: $color-gray-light-3;
+    display: block;
+    text-align: left;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+
+  &__social-label {
+    color: $color-gray-light-3;
+    display: block;
+    text-transform: uppercase;
+    font-size: 2rem;
+    padding: 1rem 0 0;
+  }
+
+  &____social-link {
+    padding: 1rem;
+    text-decoration: none;
+  }
+  &__mail {
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: $color-blue-secondary;
+  }
+  &__icon {
+    font-size: 2em;
+    padding: 1rem;
+    color: $color-blue-secondary;
+  }
+}
