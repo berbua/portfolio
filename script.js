@@ -19,7 +19,7 @@ stickyMenu();
 // Mobile menu
 const mobileMenu = () => {
   const burger = document.getElementById("js-mobile-menu");
-  const menu = document.querySelector(".main-nav__list");
+  const menu = document.querySelector(".navigation__list");
   const links = menu.querySelectorAll("a");
   burger.addEventListener("click", function() {
     menu.classList.toggle("open");
@@ -32,8 +32,6 @@ const mobileMenu = () => {
 };
 
 mobileMenu();
-
-//Projects - hover
 
 // Photos navigation
 const pins = document.querySelectorAll(".pin");
