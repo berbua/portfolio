@@ -6,12 +6,16 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  background-image: url(../img/bck2.jpg);
+  background-image: url(../img/header-small.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   color: $color-black;
   z-index: 1;
+
+  @media (min-resolutuion: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
+    background-image: url(../img/header-big.jpg);
+  }
 
   &__name-container {
     margin: 0;

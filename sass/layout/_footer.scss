@@ -1,12 +1,16 @@
 .footer {
   max-width: 1800px;
   height: 200px;
-  background: url(../img/footer.jpg);
+  background: url(../img/footer-small.jpg);
   z-index: 1;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  @media (min-resolutuion: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
+    background-image: url(../img/footer.jpg);
+  }
 
   &__copyrights {
     &:link,
