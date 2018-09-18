@@ -275,7 +275,7 @@ body {
   background-size: cover;
   color: #000;
   z-index: 1; }
-  @media (min-resolutuion: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
+  @media (min-resolutuion: 192dpi) and (min-width: 37.5em), (min-width: 75em) {
     .header {
       background-image: url(../img/header-big.jpg); } }
   .header__name-container {
