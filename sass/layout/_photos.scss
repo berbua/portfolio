@@ -7,6 +7,7 @@
   &__slides {
     position: relative;
     display: block;
+    box-shadow: 0 1.5rem 3rem rgba($color-black, 0.2);
     &:focus {
       outline: 0;
     }
@@ -60,7 +61,7 @@
     font-size: 32px;
     border: none;
     display: inline-block;
-    background: $color-white;
+    background: transparent;
     color: $color-blue-secondary;
     position: relative;
     outline: none;

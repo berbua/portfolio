@@ -46,10 +46,13 @@
       transform: rotateY(180deg);
       background-image: linear-gradient(
         to right bottom,
-        $color-gray-light-2,
-        $color-grey-dark-2
+        lighten($color-grey-dark-2, 35%),
+        lighten($color-grey-dark-2, 15%)
       );
     }
+  }
+  @include respond(tab-port) {
+    flex-basis: 90%;
   }
   &__group {
     // flex order

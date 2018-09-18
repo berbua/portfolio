@@ -1,3 +1,18 @@
+/*
+0-600px: phone
+600-900px: tablet portrait
+900-1200px: tablet landscape
+[1200 - 1800px] - normal styles apply for desktop first
+1800px+: big desktop
+
+$breakpoint argument choices
+-phone
+-tab-port
+-tab-land
+-big-desktop
+
+ORDER: base + typography > general layout  + grid > page layout > components
+*/
 *,
 *::after,
 *::before {
@@ -8,7 +23,25 @@
 }
 
 html {
-  font-size: 10px;
+  font-size: 62.5%;
+}
+
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+@media (max-width: 56.25em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (min-width: 112.5em) {
+  html {
+    font-size: 75%;
+  }
 }
 
 body {
@@ -121,9 +154,49 @@ body {
   margin: 0;
 }
 
+@media (max-width: 37.5em) {
+  .navigation__list {
+    height: 0;
+    overflow: hidden;
+    text-align: center;
+    width: 40%;
+    margin: 0 0 0 auto;
+  }
+  .navigation__list.open {
+    margin-top: 2rem;
+    overflow: initial;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    height: 100vh;
+    width: 100%;
+    background-image: -webkit-gradient(linear, left top, right bottom, from(#a6a6a6), to(#737373));
+    background-image: linear-gradient(to right bottom, #a6a6a6, #737373);
+    z-index: 1000000;
+  }
+}
+
 .navigation__item {
   margin: 0 1rem;
   padding: 1rem 0;
+}
+
+@media (max-width: 37.5em) {
+  .navigation__item {
+    margin: 1rem auto;
+    width: 30%;
+    border-bottom: 1px solid rgba(238, 238, 238, 0.2);
+    cursor: pointer;
+  }
+  .navigation__item:hover {
+    background-color: rgba(59, 59, 59, 0.6);
+  }
 }
 
 .navigation__link {
@@ -131,7 +204,7 @@ body {
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   color: #fff;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
 }
 
 .navigation__link:hover, .navigation__link:focus, .navigation__link:active {
@@ -171,6 +244,20 @@ body {
           transform: scale(1, 1);
 }
 
+@media (max-width: 37.5em) {
+  .navigation__link {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .navigation__link::after {
+    -webkit-transform: none;
+            transform: none;
+    -webkit-transition: none;
+    transition: none;
+    height: 0;
+  }
+}
+
 .navigation__logo-box {
   position: absolute;
   top: 1rem;
@@ -179,6 +266,12 @@ body {
   width: 4rem;
   color: #fff;
   text-align: center;
+}
+
+@media (max-width: 37.5em) {
+  .navigation__logo-box {
+    display: none;
+  }
 }
 
 .navigation__logo-icon {
@@ -199,7 +292,28 @@ body {
   position: fixed;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
-  z-index: 9999;
+  z-index: 100;
+}
+
+@media (max-width: 37.5em) {
+  .navigation__mobile-menu {
+    display: block;
+    height: 4rem;
+    width: 100%;
+    color: #eee;
+    cursor: pointer;
+    margin: 0;
+  }
+}
+
+@media (max-width: 37.5em) {
+  .navigation__mobile-menu-icon {
+    display: block;
+    font-size: 3.1rem;
+    float: right;
+    margin-top: 0.8rem;
+    margin-right: 2rem;
+  }
 }
 
 .btn:link, .btn:visited {
@@ -256,35 +370,6 @@ body {
           box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   -webkit-transform: translateY(0);
           transform: translateY(0);
-}
-
-.section-about {
-  position: relative;
-  height: auto;
-  padding: 5rem 5%;
-}
-
-.section-projects {
-  padding: 2rem 5%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-.section-photos {
-  padding: 1rem 5%;
-}
-
-.section-contact {
-  padding: 50px 5%;
-  width: 80%;
-  margin: 80px auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
 }
 
 .header {
@@ -324,6 +409,12 @@ body {
   text-align: center;
 }
 
+@media (max-width: 37.5em) {
+  .header__name-container {
+    background-color: transparent;
+  }
+}
+
 .header__scroll {
   width: 3rem;
   height: auto;
@@ -350,6 +441,15 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+}
+
+@media (max-width: 56.25em) {
+  .about__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .about__content-box {
@@ -440,8 +540,15 @@ body {
   padding: 1rem 2rem;
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#eee), to(#4d4d4d));
-  background-image: linear-gradient(to right bottom, #eee, #4d4d4d);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#a6a6a6), to(#737373));
+  background-image: linear-gradient(to right bottom, #a6a6a6, #737373);
+}
+
+@media (max-width: 56.25em) {
+  .tile {
+    -ms-flex-preferred-size: 90%;
+        flex-basis: 90%;
+  }
 }
 
 .tile__group--1 {
@@ -507,6 +614,8 @@ body {
 .photo__slides {
   position: relative;
   display: block;
+  -webkit-box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2);
 }
 
 .photo__slides:focus {
@@ -577,7 +686,7 @@ body {
   font-size: 32px;
   border: none;
   display: inline-block;
-  background: #fff;
+  background: transparent;
   color: #0b6890;
   position: relative;
   outline: none;
@@ -696,7 +805,7 @@ nav button:hover {
 }
 
 .contact__icon {
-  font-size: 2em;
+  font-size: 2.2em;
   padding: 1rem;
   color: #0b6890;
 }
@@ -729,5 +838,40 @@ nav button:hover {
   color: #fff;
   text-decoration: none;
   text-align: center;
+}
+
+.section-about {
+  position: relative;
+  height: auto;
+  padding: 5rem 5%;
+}
+
+.section-projects {
+  padding: 2rem 5%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.section-photos {
+  padding: 1rem 5%;
+}
+
+.section-contact {
+  padding: 50px 5%;
+  width: 80%;
+  margin: 4rem auto 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+@media (max-width: 56.25em) {
+  .section-contact {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=main.css.map */

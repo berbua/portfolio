@@ -2,6 +2,9 @@
   &__container {
     display: flex;
     flex-direction: row;
+    @include respond(tab-port) {
+      flex-direction: column;
+    }
   }
 
   &__content-box {
