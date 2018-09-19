@@ -221,18 +221,17 @@ body {
 
 .btn:link, .btn:visited {
   font-size: 1.6rem;
-  color: #0b6890;
+  color: #686868;
   font-weight: bold;
   display: inline-block;
   text-decoration: none;
-  border-bottom: 1px solid #0b6890;
+  border-bottom: 1px solid #686868;
   padding: 3px;
   transition: all 0.2s; }
 
 .btn:hover {
   color: #f7f7f7;
-  background-color: #0b6890;
-  border-radius: 3px;
+  background-color: #686868;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
   transform: translateY(-2px); }
 
@@ -242,18 +241,17 @@ body {
 
 .btn:link, .btn:visited {
   font-size: 1.6rem;
-  color: #0b6890;
+  color: #686868;
   font-weight: bold;
   display: inline-block;
   text-decoration: none;
-  border-bottom: 1px solid #0b6890;
+  border-bottom: 1px solid #686868;
   padding: 3px;
   transition: all 0.2s; }
 
 .btn:hover {
   color: #f7f7f7;
-  background-color: #0b6890;
-  border-radius: 3px;
+  background-color: #686868;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
   transform: translateY(-2px); }
 
@@ -378,10 +376,7 @@ body {
       text-align: center;
       padding: 1rem 2rem;
       transform: rotateY(180deg);
-      background-image: linear-gradient(to right bottom, #a6a6a6, #737373); }
-  @media (max-width: 56.25em) {
-    .tile {
-      flex-basis: 90%; } }
+      background-image: linear-gradient(to right bottom, #f7f7f7, #eee); }
   .tile__group--1 {
     order: 1; }
   .tile__group--6 {
@@ -395,7 +390,7 @@ body {
   .tile__project-detail-1 {
     font-size: 2rem;
     font-weight: 300;
-    color: #f7f7f7;
+    color: #686868;
     display: block;
     width: 70%;
     margin: 1rem auto;
@@ -406,11 +401,37 @@ body {
     display: block;
     font-size: 1.8rem;
     font-weight: 300;
-    color: #f7f7f7;
+    color: #686868;
     display: block;
-    border-bottom: 1px solid #eee; }
+    border-bottom: 1px solid #cecece; }
     .tile__project-detail-2:not(:last-child) {
       padding-bottom: 1.2rem; }
+  @media (max-width: 56.25em) {
+    .tile {
+      flex-basis: 90%;
+      border-radius: 0.3rem;
+      background-color: #fff;
+      box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+      height: auto;
+      margin: 2em 5%; }
+      .tile__side {
+        height: auto;
+        position: relative;
+        overflow: hidden;
+        box-shadow: none; }
+        .tile__side--back {
+          transform: rotateY(0);
+          background-image: linear-gradient(to right bottom, #f7f7f7, #eee); }
+      .tile:hover .tile__side--front {
+        transform: rotateY(0); }
+      .tile__description {
+        position: relative;
+        top: 0%;
+        left: 0%;
+        transform: translate(0);
+        width: 100%;
+        padding: 1rem;
+        z-index: 10000; } }
 
 .photo__wrapper {
   max-width: 800px;
@@ -577,6 +598,9 @@ nav button:hover {
   display: flex;
   flex-direction: column;
   justify-content: center; }
+  @media (max-width: 37.5em) {
+    .footer {
+      height: 120px; } }
   @media (min-resolutuion: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
     .footer {
       background-image: url(../img/footer.jpg); } }

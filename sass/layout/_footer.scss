@@ -8,6 +8,10 @@
   flex-direction: column;
   justify-content: center;
 
+  @include respond(phone) {
+    height: 120px;
+  }
+
   @media (min-resolutuion: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
     background-image: url(../img/footer.jpg);
   }
