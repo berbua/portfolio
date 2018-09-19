@@ -894,4 +894,13 @@ nav button:hover {
     width: 100%;
   }
 }
+
+@media (max-width: 37.5em) {
+  .section-contact {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 /*# sourceMappingURL=main.css.map */

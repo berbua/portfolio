@@ -611,3 +611,6 @@ nav button:hover {
   @media (max-width: 56.25em) {
     .section-contact {
       width: 100%; } }
+  @media (max-width: 37.5em) {
+    .section-contact {
+      flex-direction: column; } }
