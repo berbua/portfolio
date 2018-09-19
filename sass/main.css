@@ -26,19 +26,19 @@ html {
   font-size: 62.5%;
 }
 
-@media (max-width: 75em) {
+@media only screen and (max-width: 75em) {
   html {
     font-size: 56.25%;
   }
 }
 
-@media (max-width: 56.25em) {
+@media only screen and (max-width: 56.25em) {
   html {
     font-size: 50%;
   }
 }
 
-@media (min-width: 112.5em) {
+@media only screen and (min-width: 112.5em) {
   html {
     font-size: 75%;
   }
@@ -47,6 +47,16 @@ html {
 body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+::-moz-selection {
+  background-color: #0b6890;
+  color: #f7f7f7;
+}
+
+::selection {
+  background-color: #0b6890;
+  color: #f7f7f7;
 }
 
 body {
@@ -154,7 +164,7 @@ body {
   margin: 0;
 }
 
-@media (max-width: 37.5em) {
+@media only screen and (max-width: 37.5em) {
   .navigation__list {
     height: 0;
     overflow: hidden;
@@ -187,7 +197,7 @@ body {
   padding: 1rem 0;
 }
 
-@media (max-width: 37.5em) {
+@media only screen and (max-width: 37.5em) {
   .navigation__item {
     margin: 1rem auto;
     width: 30%;
@@ -244,7 +254,7 @@ body {
           transform: scale(1, 1);
 }
 
-@media (max-width: 37.5em) {
+@media only screen and (max-width: 37.5em) {
   .navigation__link {
     text-align: center;
     margin: 0 auto;
@@ -268,7 +278,7 @@ body {
   text-align: center;
 }
 
-@media (max-width: 37.5em) {
+@media only screen and (max-width: 37.5em) {
   .navigation__logo-box {
     display: none;
   }
@@ -295,7 +305,7 @@ body {
   z-index: 100;
 }
 
-@media (max-width: 37.5em) {
+@media only screen and (max-width: 37.5em) {
   .navigation__mobile-menu {
     display: block;
     height: 4rem;
@@ -306,7 +316,7 @@ body {
   }
 }
 
-@media (max-width: 37.5em) {
+@media only screen and (max-width: 37.5em) {
   .navigation__mobile-menu-icon {
     display: block;
     font-size: 3.1rem;
@@ -395,13 +405,13 @@ body {
   z-index: 1;
 }
 
-@media (min-resolutuion: 192dpi) and (min-width: 37.5em), (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), (min-width: 75em) {
+@media only screen and (min-resolutuion: 192dpi) and (min-width: 37.5em), (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), (min-width: 75em) {
   .header {
     background-image: url(../img/header-big.jpg);
   }
 }
 
-@media (min-width: 75em) {
+@media only screen and (min-width: 75em) {
   .header {
     background-image: url(../img/header-big.jpg);
   }
@@ -421,7 +431,7 @@ body {
   text-align: center;
 }
 
-@media (max-width: 37.5em) {
+@media only screen and (max-width: 37.5em) {
   .header__name-container {
     background-color: transparent;
   }
@@ -455,7 +465,7 @@ body {
           flex-direction: row;
 }
 
-@media (max-width: 56.25em) {
+@media only screen and (max-width: 56.25em) {
   .about__container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -611,7 +621,7 @@ body {
   padding-bottom: 1.2rem;
 }
 
-@media (max-width: 56.25em) {
+@media only screen and (max-width: 56.25em), only screen and (hover: none) {
   .tile {
     -ms-flex-preferred-size: 90%;
         flex-basis: 90%;
@@ -874,7 +884,7 @@ nav button:hover {
           justify-content: center;
 }
 
-@media (max-width: 37.5em) {
+@media only screen and (max-width: 37.5em) {
   .footer {
     height: 120px;
   }
@@ -926,13 +936,13 @@ nav button:hover {
           flex-direction: row;
 }
 
-@media (max-width: 56.25em) {
+@media only screen and (max-width: 56.25em) {
   .section-contact {
     width: 100%;
   }
 }
 
-@media (max-width: 37.5em) {
+@media only screen and (max-width: 37.5em) {
   .section-contact {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

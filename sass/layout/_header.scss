@@ -15,13 +15,13 @@
 
   //safari doesn't support min-resolution
 
-  @media (min-resolutuion: 192dpi) and (min-width: 37.5em),
+  @media only screen and (min-resolutuion: 192dpi) and (min-width: 37.5em),
     (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
     (min-width: 75em) {
     background-image: url(../img/header-big.jpg);
   }
 
-  @media (min-width: 75em) {
+  @media only screen and (min-width: 75em) {
     background-image: url(../img/header-big.jpg);
   }
 

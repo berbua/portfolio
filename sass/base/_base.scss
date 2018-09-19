@@ -23,3 +23,8 @@ html {
 body {
   box-sizing: border-box;
 }
+
+::selection {
+  background-color: $color-blue-primary;
+  color: $color-gray-light-1;
+}

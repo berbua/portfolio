@@ -366,18 +366,22 @@ ORDER: base + typography > general layout  + grid > page layout > components
 
 html {
   font-size: 62.5%; }
-  @media (max-width: 75em) {
+  @media only screen and (max-width: 75em) {
     html {
       font-size: 56.25%; } }
-  @media (max-width: 56.25em) {
+  @media only screen and (max-width: 56.25em) {
     html {
       font-size: 50%; } }
-  @media (min-width: 112.5em) {
+  @media only screen and (min-width: 112.5em) {
     html {
       font-size: 75%; } }
 
 body {
   box-sizing: border-box; }
+
+::selection {
+  background-color: #0b6890;
+  color: #f7f7f7; }
 
 body {
   font-family: "Fira sans", sans-serif;
@@ -455,7 +459,7 @@ body {
     justify-content: flex-end;
     padding: 0 3%;
     margin: 0; }
-    @media (max-width: 37.5em) {
+    @media only screen and (max-width: 37.5em) {
       .navigation__list {
         height: 0;
         overflow: hidden;
@@ -475,7 +479,7 @@ body {
   .navigation__item {
     margin: 0 1rem;
     padding: 1rem 0; }
-    @media (max-width: 37.5em) {
+    @media only screen and (max-width: 37.5em) {
       .navigation__item {
         margin: 1rem auto;
         width: 30%;
@@ -512,7 +516,7 @@ body {
     .navigation__link:hover::after, .navigation__link:focus::after {
       transform-origin: left bottom;
       transform: scale(1, 1); }
-    @media (max-width: 37.5em) {
+    @media only screen and (max-width: 37.5em) {
       .navigation__link {
         text-align: center;
         margin: 0 auto; }
@@ -528,7 +532,7 @@ body {
     width: 4rem;
     color: #fff;
     text-align: center; }
-    @media (max-width: 37.5em) {
+    @media only screen and (max-width: 37.5em) {
       .navigation__logo-box {
         display: none; } }
   .navigation__logo-icon {
@@ -547,7 +551,7 @@ body {
     position: fixed;
     transition: all 0.5s;
     z-index: 100; }
-  @media (max-width: 37.5em) {
+  @media only screen and (max-width: 37.5em) {
     .navigation__mobile-menu {
       display: block;
       height: 4rem;
@@ -555,7 +559,7 @@ body {
       color: #eee;
       cursor: pointer;
       margin: 0; } }
-  @media (max-width: 37.5em) {
+  @media only screen and (max-width: 37.5em) {
     .navigation__mobile-menu-icon {
       display: block;
       font-size: 3.1rem;
@@ -617,10 +621,10 @@ body {
   background-size: cover;
   color: #000;
   z-index: 1; }
-  @media (min-resolutuion: 192dpi) and (min-width: 37.5em), (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), (min-width: 75em) {
+  @media only screen and (min-resolutuion: 192dpi) and (min-width: 37.5em), (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), (min-width: 75em) {
     .header {
       background-image: url(../img/header-big.jpg); } }
-  @media (min-width: 75em) {
+  @media only screen and (min-width: 75em) {
     .header {
       background-image: url(../img/header-big.jpg); } }
   .header__name-container {
@@ -634,7 +638,7 @@ body {
     color: #fff;
     background-color: rgba(77, 77, 77, 0.29);
     text-align: center; }
-    @media (max-width: 37.5em) {
+    @media only screen and (max-width: 37.5em) {
       .header__name-container {
         background-color: transparent; } }
   .header__scroll {
@@ -653,7 +657,7 @@ body {
 .about__container {
   display: flex;
   flex-direction: row; }
-  @media (max-width: 56.25em) {
+  @media only screen and (max-width: 56.25em) {
     .about__container {
       flex-direction: column; } }
 
@@ -750,7 +754,7 @@ body {
     border-bottom: 1px solid #cecece; }
     .tile__project-detail-2:not(:last-child) {
       padding-bottom: 1.2rem; }
-  @media (max-width: 56.25em) {
+  @media only screen and (max-width: 56.25em), only screen and (hover: none) {
     .tile {
       flex-basis: 90%;
       border-radius: 0.3rem;
@@ -942,7 +946,7 @@ nav button:hover {
   display: flex;
   flex-direction: column;
   justify-content: center; }
-  @media (max-width: 37.5em) {
+  @media only screen and (max-width: 37.5em) {
     .footer {
       height: 120px; } }
   @media (min-resolutuion: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
@@ -976,9 +980,9 @@ nav button:hover {
   margin: 4rem auto 0;
   display: flex;
   flex-direction: row; }
-  @media (max-width: 56.25em) {
+  @media only screen and (max-width: 56.25em) {
     .section-contact {
       width: 100%; } }
-  @media (max-width: 37.5em) {
+  @media only screen and (max-width: 37.5em) {
     .section-contact {
       flex-direction: column; } }
