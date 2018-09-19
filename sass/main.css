@@ -403,6 +403,12 @@ body {
   }
 }
 
+@media (min-width: 75em) {
+  .header {
+    background-image: url(../img/header-big.jpg);
+  }
+}
+
 .header__name-container {
   margin: 0;
   padding: 1rem;

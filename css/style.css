@@ -278,6 +278,9 @@ body {
   @media (min-resolutuion: 192dpi) and (min-width: 37.5em), (min-width: 75em) {
     .header {
       background-image: url(../img/header-big.jpg); } }
+  @media (min-width: 75em) {
+    .header {
+      background-image: url(../img/header-big.jpg); } }
   .header__name-container {
     margin: 0;
     padding: 1rem;

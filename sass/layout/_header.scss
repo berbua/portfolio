@@ -17,6 +17,10 @@
     background-image: url(../img/header-big.jpg);
   }
 
+  @media (min-width: 75em) {
+    background-image: url(../img/header-big.jpg);
+  }
+
   &__name-container {
     margin: 0;
     padding: 1rem;
