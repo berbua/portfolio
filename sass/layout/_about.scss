@@ -24,9 +24,12 @@
     padding: 0.4rem;
     font-size: 2rem;
   }
-  &__link:link {
-    text-decoration: none;
-    color: $color-black;
-    font-weight: 600;
+  &__link {
+    &:link,
+    &:visited {
+      text-decoration: none;
+      color: $color-black;
+      font-weight: 600;
+    }
   }
 }

@@ -395,7 +395,7 @@ body {
   z-index: 1;
 }
 
-@media (min-resolutuion: 192dpi) and (min-width: 37.5em), (min-width: 75em) {
+@media (min-resolutuion: 192dpi) and (min-width: 37.5em), (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), (min-width: 75em) {
   .header {
     background-image: url(../img/header-big.jpg);
   }
@@ -486,7 +486,7 @@ body {
   font-size: 2rem;
 }
 
-.about__link:link {
+.about__link:link, .about__link:visited {
   text-decoration: none;
   color: #000;
   font-weight: 600;

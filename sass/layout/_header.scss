@@ -13,7 +13,11 @@
   color: $color-black;
   z-index: 1;
 
-  @media (min-resolutuion: 192dpi) and (min-width: 37.5em), (min-width: 75em) {
+  //safari doesn't support min-resolution
+
+  @media (min-resolutuion: 192dpi) and (min-width: 37.5em),
+    (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+    (min-width: 75em) {
     background-image: url(../img/header-big.jpg);
   }
 
